@@ -1,4 +1,4 @@
-#include "main.h"
+Gtg#include "main.h"
 /**
  * handle_print - Prints an argument based on its type
  * @fmt: Formatted string in which to print the arguments.
@@ -48,3 +48,4 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	}
 	return (printed_chars);
 }
+
