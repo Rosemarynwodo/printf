@@ -49,3 +49,4 @@ int handle_print(const char *fmt, int *index, va_list list, char buffer[],
 	}
 	return (printed_chars);
 }
+

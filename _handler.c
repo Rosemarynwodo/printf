@@ -246,3 +246,4 @@ int write_pointer(char buffer[], int index, int length,
 		buffer[--index] = extra_c;
 	return (write(1, &buffer[index], BUFF_SIZE - index - 1));
 }
+
