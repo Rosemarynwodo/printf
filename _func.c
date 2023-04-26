@@ -17,7 +17,6 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
-/************************* PRINT A STRING *************************/
 /**
  * print_string - Prints a string
  * @types: List a of arguments
@@ -75,7 +74,7 @@ int print_string(va_list types, char buffer[],
 
 /**
  * print_percent - Prints a percent sign
- * @types: Lista of arguments
+ * @types: arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
@@ -97,7 +96,7 @@ int print_percent(va_list types, char buffer[],
 
 /**
  * print_int - Print int
- * @types: Lista of arguments
+ * @types: arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
@@ -140,7 +139,7 @@ int print_int(va_list types, char buffer[],
 
 /**
  * print_binary - Prints an unsigned number
- * @types: Lista of arguments
+ * @types: arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
@@ -162,7 +161,7 @@ int print_binary(va_list types, char buffer[],
 	UNUSED(size);
 
 	n = va_arg(types, unsigned int);
-	m = 2147483648; /* (2 ^ 31) */
+	m = 2147483648;
 	a[0] = n / m;
 	for (i = 1; i < 32; i++)
 	{
